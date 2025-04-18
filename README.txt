@@ -18,8 +18,6 @@ Code and Software Submission: Taxa analysis pipeline
    2. (Optional) Create and activate a conda environment:  
       ```bash
       conda create -n taxa python=3.9
-      conda activate taxa
-      pip install -r requirements.txt
       ```
    3. Install NCBI Datasets CLI per NCBI docs at https://www.ncbi.nlm.nih.gov/datasets/docs/v2/command-line-tools/download-and-install/.  
    **Typical install time:** ~5 min on a “normal” desktop.
