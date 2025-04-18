@@ -43,9 +43,3 @@ Code and Software Submission: Taxa analysis pipeline
    3. Run `fetch_ncbi_taxID_to_taxinfo.py` on the complete ID list.  
    4. Open the notebook to merge lineage info and add locus tags.  
    5. Outputs (`*.tsv`, `*.json`, notebook HTML) can be downstream‑parsed or visualized.
-
-5. (OPTIONAL) Reproduction
-   ------------------------
-   To reproduce all figures and tables in the manuscript, run the full notebook:
-   ```bash
-   jupyter nbconvert --to html mcpol_taxa.ipynb
