@@ -30,12 +30,9 @@ Code and Software Submission: Taxa analysis pipeline
       ./fetch_taxID.sh sample_ids.txt sample_taxIDs.tsv
       ```  
       **Expected output:** tab‑delimited `sample_taxIDs.tsv`; log in `fetch_taxID.log`.  
-   3. Run taxinfo lookup:  
-      ```bash
-      python fetch_ncbi_taxID_to_taxinfo.py sample_taxIDs.tsv \
-          --out sample_taxinfo.json
-      ```  
-      **Expected output:** JSON with full lineage for each ID.  
+   3. Run taxinfo lookup: 
+      python fetch_ncbi_taxID_to_taxinfo.py --input sample_taxIDs.tsv --output sample_taxinfo.tsv
+      **Expected output:** TSV with full lineage for each ID.  
    4. Open `mcpol_taxa.ipynb` to see parsing, locus‑tag annotation and summary tables.  
    **Demo run time:** ~2 min on 4‑core, 8 GB RAM.
 
